@@ -11,6 +11,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - uses: chill-viking/npm-ci@latest
+        name: Install dependencies
+        
       - name: ha-ha
         uses: ./.github/actions/joke-action
         id: joke
